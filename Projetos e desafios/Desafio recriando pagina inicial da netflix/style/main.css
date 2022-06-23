@@ -1,0 +1,117 @@
+:root{  /*Definição das variáveis usads no CSS*/
+    --ciano : #54a3ec;
+    --preto :#141414;
+}
+
+*{      /*Formatação para deixar o CSS em um estilo padrozinado*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+
+   /*Elementos base*/
+body{
+    background-color: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+header .container{
+    display: flex; /*Comando para iniciar o flexbox por padrão joga todos os elementos para cima*/
+    flex-direction: row;
+    align-items: center; /*muda o alinhamento dos itens*/
+    justify-content: space-between; /*Cria um espaço entre a primeira e a segunda tag*/
+}
+
+header .logo{
+    color: var(--ciano);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+     
+}
+
+header nav a:hover{  /* Hover cria um efeito de transforrmação */
+    color: #fff;
+}
+
+/*filme principal*/
+
+.container{
+    margin-left: 20px;
+}
+
+.jogo-principal .container{
+    width: 70%;
+}
+
+.jogo-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)100%), url('/img/logo.jpg');
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.jogo-principal .descricao{
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+
+
+.titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 15px;
+    border-radius: 30px;
+
+    cursor: pointer;
+    transition: .35s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.box-jogos{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+footer{
+    background-color: #141414;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
